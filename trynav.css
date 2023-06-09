@@ -2,22 +2,23 @@
     font-family: 'nexa slab';
     src: url(NexaSlabDemo-Regular.otf);
 }
+
 *{
-    padding: 0;
+
     margin: 0;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-    max-width: 1300;
-    
+    max-width: 100%;
 }
+
 body{
     font-family: Roboto,sans-serif;
     background-color: #f3f3f3;
 }
 nav{
     position: fixed;
-    background-color: #f3f3f3;
+    /* background-color: #f3f3f3; */
     height: 130px;
     width: 100%; 
     display: block;
@@ -116,9 +117,9 @@ label.logo{
 }
 
 .font {
-    padding:15px 50px;
     padding-top: 200px;
     width: 100%;
+
 }
 
 .fontopening {
