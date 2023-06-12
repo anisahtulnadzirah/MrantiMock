@@ -1,0 +1,97 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/ripple.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'background': '#f3f3f3',
+                        'font': '0000FF',
+                        'color': '#d139ef',
+                    }
+                }
+            }
+        }
+    </script>
+    <title>Mranti Tailwind</title>
+</head>
+<body class="bg-background mx-10">
+    <nav class="bg-background p-5 pb-0 md:flex md:justify-end md:items-center">
+        <div class="md:flex md:justify-end">
+            <ul class="md:flex md:items-center">
+                <li class="mx-4 my-4 md:my-0"><a href="#" class="text-base hover:text-gray-200 duration-500">Share</a></li>
+                <li class="mx-4 my-4 md:my-0"><a href="#" class="text-base hover:text-gray-200 duration-500">eServices</a></li>
+                <li class="mx-4 my-4 md:my-0"><a href="#" class="text-base hover:text-gray-200 duration-500 pr-3">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <nav class="bg-background p-5 pt-0 md:flex md:justify-between md:items-center">
+        <div>
+            <img class="h-20 inline" src="MRANTI-logo.png">
+        </div>
+        <div class="">
+            <ul class="md:flex md:items-center">
+                <li class="mx-6 my-6 md:my-0"><a href="#" class="text-xl hover:text-gray-200 duration-500">About us</a></li>
+                <li class="mx-6 my-6 md:my-0">
+                    <div class="flex justify">
+                        <a href="#" class="text-xl hover:text-gray-200 duration-500">MRANTI Park</a>
+                        <button class="hover:text-gray-700 cursor-pointer" data-ripple-light="true">
+                            <svg viewBox="0 0 15 18" fill="currentColor" class="w-5 h-5">
+                                <path d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 
+                                0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </li>
+                <li class="mx-6 my-6 md:my-0"> 
+                    <div class="flex justify">
+                        <a href="#" class="text-xl hover:text-gray-200 duration-500">Solutions</a>
+                        <button class="hover:text-gray-700 cursor-pointer" data-ripple-light="true">
+                            <svg viewBox="0 0 15 18" fill="currentColor" class="w-5 h-5">
+                                <path d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 
+                                0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" />
+                            </svg>
+                        </button>
+                    </div>
+                </li>
+                <li class="mx-6 my-6 md:my-0">
+                    <div class="flex justify">
+                        <a href="#" class="text-xl hover:text-gray-200 duration-500">Resources</a>
+                        <button class="hover:text-gray-700 cursor-pointer" data-ripple-light="true">
+                            <svg viewBox="0 0 15 18" fill="currentColor" class="w-5 h-5">
+                                <path d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 
+                                0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" />
+                            </svg>
+                        </button>
+                    </div>
+                </li>
+                <li class="mx-6 my-6 md:my-0"><a href="#" class="text-xl hover:text-gray-200 duration-500">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="text-center p-10">
+        <h1 class="text-9xl pb-4 font-serif ">Ideas to
+        <span class=" text-9xl font-serif text-font">Impact</span></h1>
+        <p class=" px-52 text-xl">
+            Malaysian Research Accelerator for Technology & Innovation (MRANTI) is
+            Malaysia’s central research & innovation
+            commercialisation agency that accelerates ideas to market.
+        </p>
+    </div>
+
+    <div class=" p-10">
+        <div class="grid grid-rows-3 grid-flow-col gap-x-8 gap-y-4 flex justify-center ">
+            <div class="border-dashed border-2 row-start-1 row-end-8 col-start-1 col-end-6">Col 1</div>
+            <div class="border-dashed border-2 row-start-1 row-end-6 col-start-6 col-end-12">Col 2</div>
+            <div class="border-dashed border-2 row-start-6 row-span-8 col-start-6 col-end-12">Col 3</div>
+        </div>
+    </div>
+</body>
+</html>
