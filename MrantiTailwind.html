@@ -4,7 +4,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
     <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/ripple.js"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <script>
         tailwind.config = {
             theme: {
@@ -20,7 +28,7 @@
     </script>
     <title>Mranti Tailwind</title>
 </head>
-<body class="bg-background mx-10">
+<body class="bg-background mx-10 lg:content-auto max-w-screen-xl xl:mx-auto">
     <nav class="bg-background p-5 pb-0 md:flex md:justify-end md:items-center">
         <div class="md:flex md:justify-end">
             <ul class="md:flex md:items-center">
@@ -76,10 +84,10 @@
         </div>
     </nav>
 
-    <div class="text-center p-10">
+    <div class="text-center lg:p-10">
         <h1 class="text-9xl pb-4 font-serif ">Ideas to
-        <span class=" text-9xl font-serif text-font">Impact</span></h1>
-        <p class=" px-52 text-xl">
+        <span class="lg:text-9xl font-serif text-font md:text-9xl max-sm:text-8xl">Impact</span></h1>
+        <p class=" lg:px-52 text-xl md:px-0 md:text-center xl:px-56">
             Malaysian Research Accelerator for Technology & Innovation (MRANTI) is
             Malaysia’s central research & innovation
             commercialisation agency that accelerates ideas to market.
@@ -87,10 +95,10 @@
     </div>
 
     <div class=" p-10">
-        <div class="grid grid-rows-3 grid-flow-col gap-x-8 gap-y-4 flex justify-center ">
-            <div class="border-dashed border-2 row-start-1 row-end-8 col-start-1 col-end-6">Col 1</div>
-            <div class="border-dashed border-2 row-start-1 row-end-6 col-start-6 col-end-12">Col 2</div>
-            <div class="border-dashed border-2 row-start-6 row-span-8 col-start-6 col-end-12">Col 3</div>
+        <div class="grid grid-rows-3 grid-flow-col gap-x-8 gap-y-4">
+            <div class="border-dashed border-2 row-start-1 row-end-12 col-start-1 col-end-6">Col 1</div>
+            <div class="border-dashed border-2 row-start-1 row-end-7 col-start-6 col-end-12">Col 2</div>
+            <div class="border-dashed border-2 row-start-7 row-end-12 col-start-6 col-end-12">Col 3</div>
         </div>
     </div>
 </body>
